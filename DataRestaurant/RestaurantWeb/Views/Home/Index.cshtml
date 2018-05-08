@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Really Real Restaurant Reviews</h1>
+    <p class="lead">Totally Not Fake Reviews on Totally Not Fake Restaurants</p>
+    <!--/<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    -->
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Real Restaurants</h2>
+        <p>
+            Only world-reknowned restaurants, cafes, and pubs make it onto Really Real Restaurant Reviews. 
+        </p>
+        <p><input type="button" value="Restaurants" onclick="@("window.location.href='" + @Url.Action("Index", "Restaurant") + "'");" /></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Real Reviews</h2>
+        <p>We only post semi-real reviews from anonymous reviewers with absolutely no agendas. Or not. Reviews are anonymous, after all. </p>
+        <p><input type="button" value="Reviews" onclick="@("window.location.href='" + @Url.Action("Index", "Review") + "'");" /></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Really...</h2>
+        <p>You too can write a review to a place you've never been!</p>
+        <p><input type="button" value="Write a Review" onclick="@("window.location.href='" + @Url.Action("Create", "Review") + "'");" /></p>
+    </div>
+</div>
+
+
